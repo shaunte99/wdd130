@@ -1,153 +1,144 @@
-/* Define color scheme and typography */
 :root {
-    --black: #020202;
-    --dark-green: #0d2818;
-    --medium-green: #04471c;
-    --light-green: #058c42;
-    --bright-green: #16db65;
-    --white: #ffffff;
-    --font-heading: 'Oswald', sans-serif;
-    --font-body: 'Roboto', sans-serif;
+    --color1: #020202; /* Darkest background */
+    --color2: #0d2818; /* Dark background */
+    --color3: #04471c; /* Medium background */
+    --color4: #058c42; /* Accent color */
+    --color5: #16db65; /* Bright accent color */
+    --font-heading: 'Oswald', sans-serif; /* Heading font */
+    --font-body: 'Roboto', sans-serif; /* Body font */
 }
 
-/* Global styling */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-family: var(--font-body);
-    color: var(--dark-green);
-    background-color: var(--light-green);
     line-height: 1.6;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-h1, h2 {
-    font-family: var(--font-heading);
-    color: var(--bright-green);
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
+    color: #fff;
+    background-color: var(--color1);
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
+    background-color: var(--color2);
+    padding: 20px;
+    text-align: center;
 }
 
-header img {
-    width: 150px;
+#logo {
+    max-width: 200px; /* Responsive logo */
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 nav a {
+    color: var(--color5);
+    text-decoration: none; /* No underline */
     margin: 0 15px;
-    font-weight: bold;
-    color: var(--medium-green);
-    transition: color 0.3s;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
-    color: var(--bright-green);
+    background-color: var(--color4);
+    color: #fff; /* Changes text color on hover */
+    border-radius: 5px; /* Rounded corners */
 }
 
-/* Hero section styling */
+main {
+    padding: 20px; /* Main padding for content spacing */
+}
+
 .hero {
     position: relative;
-    background-image: url('../images/hero.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    text-align: center;
 }
 
-.hero h1 {
+.hero-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.8; /* Slight transparency */
+}
+
+h1 {
     position: absolute;
-    font-size: 4rem;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px 20px;
-    border-radius: 5px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-heading);
+    font-size: 4rem; /* Larger heading size */
+    color: var(--color5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Shadow for better readability */
 }
 
-/* Article styling */
 article {
     position: absolute;
-    bottom: 30px;
-    right: 50px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    max-width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for text */
+    color: white;
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners for the article */
+    max-width: 90%; /* Responsive width */
 }
 
-article img {
-    float: right;
-    margin-left: 10px;
-    width: 80px;
+.client-image {
+    float: right; /* Float image to the right */
+    width: 80px; /* Smaller client image */
     height: auto;
-    border-radius: 50%;
+    margin-left: 10px;
 }
 
-/* Section styling */
+h2 {
+    color: var(--color4);
+    margin: 20px 0 10px; /* Spacing around headings */
+    text-align: center; /* Center align h2 */
+}
+
 section {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: var(--white);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    font-size: 2rem;
-    color: var(--medium-green);
-    margin-bottom: 10px;
-}
-
-section p {
-    font-size: 1rem;
-    margin-bottom: 20px;
+    padding: 20px; /* Spacing for sections */
+    margin: 10px auto; /* Center sections with margin */
+    background-color: var(--color3); /* Background for sections */
+    border-radius: 10px; /* Rounded corners for sections */
+    max-width: 800px; /* Limit the width for better readability */
 }
 
 section img {
-    width: 100%;
+    width: 100%; /* Responsive images */
     height: auto;
-    margin-top: 10px;
-    display: block;
+    margin: 10px 0; /* Spacing around images */
 }
 
-/* Footer styling */
 footer {
+    background-color: var(--color2);
+    color: white;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-    background-color: var(--dark-green);
-    color: var(--white);
+    padding: 20px 0; /* Padding for footer */
 }
 
 footer p {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
+    margin: 10px 0; /* Space between elements in the footer */
 }
 
-footer a img {
+footer img {
     width: 30px;
+    height: auto;
     margin: 0 10px;
-    transition: opacity 0.3s;
+    transition: transform 0.3s; /* Animation for hover effect */
 }
 
-footer a img:hover {
-    opacity: 0.8;
+footer img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Ensuring all social media links have no text decoration */
+footer a {
+    text-decoration: none; /* No underline on social media links */
 }
