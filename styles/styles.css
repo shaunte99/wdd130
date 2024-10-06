@@ -1,0 +1,50 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main Image Styles */
+main img {
+    max-width: 100%; /* Responsive image */
+}
+
+/* Aside Styles */
+aside {
+    width: 300px; /* Specific width */
+    margin: 20px auto; /* Centered with margin */
+    border: 2px solid #ccc; /* Border */
+    padding: 10px; /* Padding */
+    background-color: #f9f9f9; /* Background color */
+    color: #333; /* Text color */
+}
+
+/* Aside Image Styles */
+aside img {
+    width: 200px; /* Width of 200px */
+    height: auto; /* Auto height */
+}
+
+/* Paragraph Styles */
+p {
+    padding: 0; /* No padding */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 20px; /* Margin at the top */
+    border-top: 2px solid #ccc; /* Border at the top */
+    text-align: center; /* Centered text */
+    padding: 10px; /* Padding for footer */
+}
