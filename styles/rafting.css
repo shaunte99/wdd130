@@ -135,10 +135,10 @@ footer img {
 }
 
 footer img:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    transform: scale(1.1); 
 }
 
-/* Ensuring all social media links have no text decoration */
+
 footer a {
-    text-decoration: none; /* No underline on social media links */
+    text-decoration: none; 
 }
