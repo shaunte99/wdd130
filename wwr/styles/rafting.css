@@ -1,7 +1,6 @@
  /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap');
 
-
 :root {
   --primary-color: #2a9d8f;
   --secondary-color: #d9f7f5;
@@ -10,7 +9,6 @@
   --heading-font: 'Playfair Display', serif;
   --text-font: 'Open Sans', sans-serif;
 }
-
 
 * {
   margin: 0;
@@ -24,7 +22,6 @@ body {
   background-color: var(--accent1-color);
   color: #333;
 }
-
 
 header {
   background-color: var(--primary-color);
@@ -56,7 +53,6 @@ nav a:hover {
   color: var(--accent2-color);
 }
 
-
 .hero {
   position: relative;
   text-align: center;
@@ -81,7 +77,6 @@ nav a:hover {
   border-radius: 8px;
 }
 
-
 main {
   padding: 2rem;
   background-color: var(--accent1-color);
@@ -104,11 +99,11 @@ section p {
   color: #444;
 }
 
-
 .image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 .image-grid img {
@@ -117,17 +112,6 @@ section p {
   object-fit: cover;
   border-radius: 6px;
 }
-
-
-.purpose {
-  background-color: var(--secondary-color);
-  padding: 1.5rem;
-  border-left: 6px solid var(--primary-color);
-  border-radius: 8px;
-  font-size: 1.1rem;
-  color: #222;
-}
-
 
 footer {
   background-color: var(--primary-color);
@@ -139,18 +123,18 @@ footer {
   text-align: center;
 }
 
-footer .socials {
+.social-icons {
   margin-top: 0.5rem;
   display: flex;
   gap: 1rem;
 }
 
-footer .socials img {
-  width: 32px;
-  height: 32px;
+.social-icons img {
+  width: 24px;
+  height: 24px;
   transition: transform 0.2s ease;
 }
 
-footer .socials img:hover {
+.social-icons img:hover {
   transform: scale(1.1);
 }
