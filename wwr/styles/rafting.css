@@ -1,4 +1,4 @@
- /* Root variables: colors and fonts */
+/* --- Root Variables & Base Styles --- */
 :root {
   --primary-color: #2a9d8f;
   --secondary-color: #d9f7f5;
@@ -22,12 +22,13 @@ h1, h2 {
   color: var(--primary-color);
 }
 
+/* --- Header --- */
 header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
   background-color: var(--primary-color);
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 1rem 2rem;
 }
 
@@ -35,19 +36,26 @@ header img {
   height: 50px;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 1.5rem;
-  font-weight: 600;
-  font-family: var(--text-font);
+nav {
+  background-color: white;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
+nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* --- Main --- */
 main {
   padding: 2rem;
 }
 
-/* HERO SECTION */
+/* --- Hero Section --- */
 .hero {
   position: relative;
   text-align: center;
@@ -91,7 +99,7 @@ main {
   border-radius: 5px;
 }
 
-/* HISTORY SECTION */
+/* --- History Section --- */
 .history {
   background-color: var(--secondary-color);
   padding: 2rem;
@@ -99,33 +107,76 @@ main {
   margin-bottom: 2rem;
 }
 
-/* ADVENTURE SECTION */
+.history h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.history-content img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* --- Adventure Section --- */
 .adventure {
   text-align: center;
 }
 
-.adventure img {
-  width: 18%;
-  margin: 1%;
+.adventure h2 {
+  margin-bottom: 1rem;
+}
+
+.adventure-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.adventure-item {
+  width: 150px;
+  text-align: center;
+}
+
+.adventure-item img {
+  width: 100%;
   border-radius: 8px;
 }
 
-/* FOOTER */
+.adventure-item p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* --- Footer --- */
 footer {
   background-color: var(--primary-color);
   color: white;
-  text-align: center;
-  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  flex-wrap: wrap;
+}
+
+footer p {
+  margin: 0;
 }
 
 footer a {
   text-decoration: none;
-  margin: 0 0.5rem;
+  margin-left:0.5rem ;
 }
 
 footer a img {
   width: 30px;
   height: 30px;
   vertical-align: middle;
-  border: none;
 }
