@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>White Water Wonders | Contact Us</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="White Water Wonders Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Rafting Adventure" />
+      <h1>Contact Us</h1>
+      <article>
+        <p>
+          Got questions? We’d love to hear from you! Whether you're planning your first adventure or returning for another splash, we’re here to help.
+        </p>
+      </article>
+    </section>
+
+ <!-- inside <section class="history"> -->
+<p>
+  📍 123 Waterfall Road, Krugersdorp, Gauteng, South Africa<br>
+  📞 +27 10 555 1234<br>
+  📧 support@whitewaterwonders.com<br>
+  🕒 Mon–Sat: 8am–6pm
+</p>
+
+<!-- inside <section class="adventure"> -->
+<iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11443.021576570005!2d27.761181025391926!3d-26.094717151277007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a4e2e5ab13c9%3A0x56b816f0700f8c5e!2sKrugersdorp%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1717328800000!5m2!1sen!2sza" 
+  width="100%" 
+  height="300" 
+  style="border:0; border-radius: 10px;" 
+  allowfullscreen="" 
+  loading="lazy">
+</iframe>
+
+
+    <!-- Contact Form -->
+    <section class="history">
+      <h2>Send Us a Message</h2>
+      <form action="thankyou.html" method="post" style="display: grid; gap: 1rem; max-width: 600px; margin: auto;">
+        <label>
+          Full Name:
+          <input type="text" name="fullname" required>
+        </label>
+        <label>
+          Email:
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Purpose:
+          <select name="purpose" required>
+            <option value="">-- Please Select --</option>
+            <option value="general">General Inquiry</option>
+            <option value="booking">Booking Request</option>
+            <option value="feedback">Feedback</option>
+          </select>
+        </label>
+        <label>
+          Message:
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" style="padding: 0.75rem; background-color: var(--primary-color); color: white; border: none; border-radius: 5px;">Submit</button>
+      </form>
+    </section>
+
+    <!-- Happy Employees -->
+    <section class="adventure">
+      <h2>Meet Our Happy Crew</h2>
+      <div class="adventure-grid">
+        <div class="adventure-item">
+          <img src="images/employee.jpg" alt="Employee smiling" />
+          <p>Jamie, Lead Guide – 10 years of river wisdom!</p>
+        </div>
+        <div class="adventure-item">
+          <img src="images/employeeteam.avif" alt="Employee team photo" />
+          <p>Our team – passionate, certified, and fun!</p>
+        </div>
+        <div class="adventure-item">
+          <img src="images/employee1.jpg" alt="Employee on river" />
+          <p>Greg, Guest Relations – always here for you.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 White Water Wonders | Kamogelo Matsetela</p>
+    <a href="#"><img src="images/facebook.webp" alt="Facebook icon" /></a>
+    <a href="#"><img src="images/X-64.webp" alt="Twitter icon" /></a>
+    <a href="#"><img src="images/instagram.webp" alt="Instagram icon" /></a>
+  </footer>
+</body>
+</html>
